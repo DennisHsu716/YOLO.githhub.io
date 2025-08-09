@@ -1,4 +1,4 @@
-# Object Detection 
+# TableVision AI
 
 ## 📌 Project Overview
 This project trains a YOLO-based object detection model to detect **tableware** objects (e.g., plates, cups, bowls) using a custom-labeled dataset.  
