@@ -1,4 +1,4 @@
-# Tableware Object Detection with YOLO
+# Tableware Object Detection 
 
 ## 📌 Project Overview
 This project trains a YOLO-based object detection model to detect **tableware** objects (e.g., plates, cups, bowls) using a custom-labeled dataset.  
