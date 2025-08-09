@@ -13,13 +13,15 @@ YOLO.githhub.io/
 ├── data.yaml                    # YOLO dataset config (classes + paths)    
 │  
 ├── datasets/                    # Small sample dataset for quick test    
-│   ├── train/images/*.jpg  
-│   ├── train/labels/*.txt  
-│   ├── valid/images/*.jpg  
-│   ├── valid/labels/*.txt  
-│   ├── test/images/*.jpg  
-│   └── test/labels/*.txt  
-│  
+│     │── Train/   
+│     │ ├── Images/    
+│     │ └── Labels/   
+│     │── Valid/   
+│     │ ├── Images/    
+│     │ └── Labels/   
+│     │── Test/  
+│     │ ├── Images/  
+│     │ └── Labels/  
 ├── Weights/                     # Model weights   
 │   └── best.pt   
 │   
@@ -84,11 +86,21 @@ python val.py --weights runs_custom/tableware_model/weights/best.pt \
 ```
 
 ### 🔍 Inference
-```results = model.predict('/content/drive/MyDrive/tableware/test/images/example.jpg', save=True)```
-
+```
+python detect.py \
+  --weights runs_custom/tableware_model/weights/best.pt \
+  --source /content/drive/MyDrive/tableware/test/images \
+  --img 640 \
+  --conf 0.25
+```
 Detected images will be saved in:  
-```runs_custom/tableware_model/predict/```
+```runs/detect/exp/```
+
+### 📦 Download Full Dataset
+Due to file size, the full training dataset is stored externally:  
+📥 Google Drive Link ((https://drive.google.com/drive/folders/1czJoabUyuPLusa56is1rayl_yV-xZARB?usp=sharing)  
 
 ### 📌 Future Improvements
 * Increase dataset size for better generalization
 * Apply data augmentation techniques
+* Try YOLOv8 for higher accuracy and faster inference
