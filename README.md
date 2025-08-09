@@ -38,12 +38,13 @@ drive.mount('/content/drive')
 ```!pip install ultralytics -q```
 
 ### 📝 Data Configuration (data.yaml)
+```
 train: /content/drive/MyDrive/tableware/train/images
 val: /content/drive/MyDrive/tableware/valid/images
 test: /content/drive/MyDrive/tableware/test/images
-
-nc: 1
-names: ['tableware']
+```
+nc: 1  
+names: ['tableware']  
 
 ### 🚀 Training the Model
 ```
