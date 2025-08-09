@@ -67,7 +67,7 @@ model.train(
 ### 🔍 Inference
 ```results = model.predict('/content/drive/MyDrive/tableware/test/images/example.jpg', save=True)```
 
-Detected images will be saved in:
+Detected images will be saved in:  
 ```runs_custom/tableware_model/predict/```
 
 ### 📌 Future Improvements
