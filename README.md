@@ -43,8 +43,8 @@ train: /content/drive/MyDrive/tableware/train/images
 val: /content/drive/MyDrive/tableware/valid/images
 test: /content/drive/MyDrive/tableware/test/images
 ```
-nc: 1  
-names: ['tableware']  
+nc: 8  
+names: ['chopsticks', 'dessert fork', 'dessert spoon', 'dinner fork', 'meal knife', 'salad fork', 'soup spoon', 'spoon']  
 
 ### 🚀 Training the Model
 ```
