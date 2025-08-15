@@ -7,6 +7,7 @@ The training is performed on **Google Colab** with the dataset stored in **Googl
 
 ---
 ### 📂 Repository Structure
+```
 YOLO.githhub.io/     
 │   
 ├── requirements.txt             # Required Python packages    
@@ -35,9 +36,11 @@ YOLO.githhub.io/
 │   └── demo_result.jpg  
 │  
 └── Scripts/           
-│   └── Untitled0.ipynb  
+│   └── Untitled0.ipynb
+```
 
 ## 📂 Dataset Structure
+```
 Tableware/  
 │── Train/  
 │ ├── Images/  
@@ -49,7 +52,7 @@ Tableware/
 │ ├── Images/  
 │ └── Labels/  
 └── Data.yaml  
-
+```
 
 - **images/** → contains `.jpg` images    
 - **labels/** → contains `.txt` label files in YOLO format   
